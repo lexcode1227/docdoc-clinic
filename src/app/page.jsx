@@ -6,6 +6,7 @@ import ContactBanner from './components/ContactBanner';
 import Services from './components/Services';
 import AboutHospital from './components/AboutHospital';
 import LatestNews from './components/LatestNews';
+import MedicalDep from './components/MedicalDep';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Services/>
         <AboutHospital/>
         <LatestNews/>
+        <MedicalDep/>
       </div>
     </main>
   )
