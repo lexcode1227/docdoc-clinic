@@ -1,13 +1,23 @@
 import React from 'react'
-import Bar from './components/Bar';
+import Bar from './components/Banner';
 import Navbar from './components/navbar';
+import MainSection from './components/MainSection';
+import ContactBanner from './components/ContactBanner';
+import Services from './components/Services';
+import AboutHospital from './components/AboutHospital';
+import LatestNews from './components/LatestNews';
 
 const HomePage = () => {
   return (
-    <main className="h-full mt-3.5">
-      <div className='flex flex-col justify-center mt-7 mb-7'>
+    <main className="h-full">
+      <div className='flex flex-col justify-center '>
         <Bar/>
         <Navbar/>
+        <MainSection/>
+        <ContactBanner/>
+        <Services/>
+        <AboutHospital/>
+        <LatestNews/>
       </div>
     </main>
   )

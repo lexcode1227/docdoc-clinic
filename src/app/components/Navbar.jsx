@@ -36,7 +36,7 @@ const Navbar = () => {
                 )
             })}
         </nav>
-        <button className="bg-[#EEEFFF] text-[#032FF2] p-3 rounded">Get Appointment</button>
+        <button className="bg-[#EEEFFF] text-[#032FF2] p-3 rounded-[10px]">Get Appointment</button>
     </header>
   )
 }
