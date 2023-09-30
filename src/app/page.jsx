@@ -7,6 +7,9 @@ import Services from './components/Services';
 import AboutHospital from './components/AboutHospital';
 import LatestNews from './components/LatestNews';
 import MedicalDep from './components/MedicalDep';
+import MedicalSpecialists from './components/MedicalSpecialists';
+import RealiableServices from './components/RealiableServices';
+import Footer from './components/Footer';
 
 const HomePage = () => {
   return (
@@ -20,6 +23,9 @@ const HomePage = () => {
         <AboutHospital/>
         <LatestNews/>
         <MedicalDep/>
+        <MedicalSpecialists/>
+        <RealiableServices/>
+        <Footer/>
       </div>
     </main>
   )

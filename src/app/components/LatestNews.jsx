@@ -4,7 +4,8 @@ import Image1 from "../../../public/article1Img.png"
 import Image2 from "../../../public/article2Img.png"
 import Image3 from "../../../public/article3Img.png"
 import Image4 from "../../../public/article4Img.png"
-
+import { rubik } from "../font"
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const LatestNews = () => {
     const data = [
@@ -34,16 +35,16 @@ const LatestNews = () => {
         },
     ]
   return (
-    <section className="flex flex-col justify-around items-center mx-[100px] gap-3 h-[600px]">
-        <h2 className="text-[42px] font-bold">LATEST NEWS</h2>
+    <section className="flex flex-col justify-around items-center lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] gap-3 h-[600px]">
+        <h2 className={`${rubik.className} text-[42px] font-bold`}>LATEST NEWS</h2>
         <div className="flex justify-between w-full ">
             {data.map((item)=> {
                 return (
                     <article key={item.id} className="w-[270px] h-[441px] p-2 flex flex-col justify-around">
-                        <Image src={item.image} height={170} width={239} />
+                        <Image src={item.image} height={170} width={239} alt={item.title} />
                         <h3 className="text-lg text-[#262433]">{item.title}</h3>
                         <p className="text-base text-[#5B5B5B]">{item.text}</p>
-                        <Link href={"#"}>Read More</Link>
+                        <Link href={"#"} className="flex gap-5 items-center w-1/2 hover:text-[#032ff2] lg:w-2/3 ">Read More  <FaArrowRightLong className="fill-[#032FF2]"/></Link>
                     </article>
                 )
             })}
