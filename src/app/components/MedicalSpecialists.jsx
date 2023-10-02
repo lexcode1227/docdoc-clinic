@@ -1,3 +1,4 @@
+"use client"
 import { rubik } from "../font"
 import doc1 from "@public/Doc1.png"
 import doc2 from "@public/Doc2.png"
@@ -23,9 +24,9 @@ const MedicalSpecialists = () => {
         },
     ]
   return (
-    <section className="flex flex-col gap-4 justify-center items-stretch lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] h-[700px]">
+    <section className="flex flex-col gap-10 justify-center items-stretch mx-5 my-8 h-auto lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] lg:h-[600px]">
         <h2 className={`${rubik.className} text-center text-[32px] text-[#2b2e35]`} >Medical Specialists</h2>
-        <div className="flex justify-between gap-6">
+        <div className="flex flex-col lg:flex-row justify-between gap-6">
             {medicalStaff.map((item)=>{
                 return (
                     <article className="flex flex-col justify-around lg:w-1/3 xl:w-[370px] lg:h-[460px] xl:h-[533px] " key={item.title}>

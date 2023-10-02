@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import Image1 from "../../../public/article1Img.png"
@@ -35,12 +36,12 @@ const LatestNews = () => {
         },
     ]
   return (
-    <section className="flex flex-col justify-around items-center lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] gap-3 h-[600px]">
+    <section className="flex flex-col justify-center lg:justify-around items-center mx-5 my-8 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] gap-3 h-auto lg:h-[600px]">
         <h2 className={`${rubik.className} text-[42px] font-bold`}>LATEST NEWS</h2>
-        <div className="flex justify-between w-full ">
+        <div className="flex flex-col lg:flex-row justify-between w-full ">
             {data.map((item)=> {
                 return (
-                    <article key={item.id} className="w-[270px] h-[441px] p-2 flex flex-col justify-around">
+                    <article key={item.id} className="w-full md:w-[270px] h-[441px] p-2 flex flex-col justify-around items-center">
                         <Image src={item.image} height={170} width={239} alt={item.title} />
                         <h3 className="text-lg text-[#262433]">{item.title}</h3>
                         <p className="text-base text-[#5B5B5B]">{item.text}</p>
