@@ -26,12 +26,14 @@ const Services = () => {
         },
     ]
   return (
-    <section className="flex flex-col md:flex-row justify-between gap-6 mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] mt-6">
+    <section className="flex flex-col md:flex-row justify-between gap-6 mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] my-14 ">
         {data.map((item)=> {
+            const firsttitle = item.title.split(" ")[0]
+            const sectitle = item.title.split(" ")[1]
             return (
-                <div key={item.id} className="md:w-[290px] xl:w-[370px] xl:h-[395px] flex flex-col justify-center items-center gap-2 shadow-[0px 0px 15px 0px rgba(0, 0, 0, 0.25)] border border-solid">
-                    <h3 className="font-bold text-[32px] text-[#5B5B5B] text-center">{item.title}</h3>
-                    <h3 className="font-bold text-[32px] text-[#032FF2] text-center">{item.title}</h3>
+                <div key={item.id} className="md:w-[290px] xl:w-[370px] h-[395px] flex flex-col justify-center items-center gap-2 shadow-[0px 0px 15px 0px #0000003f] border border-solid">
+                    <h3 className="font-bold text-[32px] text-[#5B5B5B] text-center">{firsttitle}</h3>
+                    <h3 className="font-bold text-[32px] text-[#032FF2] text-center">{sectitle}</h3>
                     <h5 className="text-base text-[#5B5B5B] text-center py-1 px-2 lg:px-[42px]">{item.text}</h5>
                     <Image className="object-contain" src={item.icon} height={75} width={75} alt={item.title} />
                 </div>

@@ -37,12 +37,12 @@ const LatestNews = () => {
     ]
   return (
     <section className="flex flex-col justify-center lg:justify-around items-center mx-5 my-8 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] gap-3 h-auto lg:h-[600px]">
-        <h2 className={`${rubik.className} text-[42px] font-bold`}>LATEST NEWS</h2>
-        <div className="flex flex-col lg:flex-row justify-between w-full ">
+        <h2 className={`${rubik.className} text-[42px] text-[#2b2e35] font-bold`}>LATEST NEWS</h2>
+        <div className="flex flex-col flex-wrap lg:flex-nowrap sm:flex-row justify-between w-full ">
             {data.map((item)=> {
                 return (
-                    <article key={item.id} className="w-full md:w-[270px] h-[441px] p-2 flex flex-col justify-around items-center">
-                        <Image src={item.image} height={170} width={239} alt={item.title} />
+                    <article key={item.id} className="w-full sm:w-[270px] h-[441px] p-2 flex flex-col justify-around items-center">
+                        <Image src={item.image} height="auto" width="auto" alt={item.title} />
                         <h3 className="text-lg text-[#262433]">{item.title}</h3>
                         <p className="text-base text-[#5B5B5B]">{item.text}</p>
                         <Link href={"#"} className="flex gap-5 items-center w-1/2 hover:text-[#032ff2] lg:w-2/3 ">Read More  <FaArrowRightLong className="fill-[#032FF2]"/></Link>

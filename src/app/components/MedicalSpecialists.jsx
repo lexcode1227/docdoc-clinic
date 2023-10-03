@@ -24,12 +24,12 @@ const MedicalSpecialists = () => {
         },
     ]
   return (
-    <section className="flex flex-col gap-10 justify-center items-stretch mx-5 my-8 h-auto lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] lg:h-[600px]">
+    <section className="flex flex-col gap-10 justify-center items-stretch mx-5 my-16 h-auto lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] lg:h-[600px]">
         <h2 className={`${rubik.className} text-center text-[32px] text-[#2b2e35]`} >Medical Specialists</h2>
-        <div className="flex flex-col lg:flex-row justify-between gap-6">
+        <div className="flex flex-col sm:flex-row justify-between gap-6">
             {medicalStaff.map((item)=>{
                 return (
-                    <article className="flex flex-col justify-around lg:w-1/3 xl:w-[370px] lg:h-[460px] xl:h-[533px] " key={item.title}>
+                    <article className="flex flex-col justify-around gap-3 h-auto sm:w-1/3 xl:w-[370px] md:h-[370px] lg:h-[460px] xl:h-[533px] " key={item.title}>
                         <Image src={item.img} height={449} width={370} alt={item.title} />
                         <h4 className="text-base font-semibold ">{item.title}</h4>
                         <h5 className="text-sm text-[#5b5b5b] ">{item.description}</h5>

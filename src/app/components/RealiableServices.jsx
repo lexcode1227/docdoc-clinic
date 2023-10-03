@@ -27,14 +27,14 @@ const RealiableServices = () => {
     },
   ]
   return (
-    <section className='h-auto flex flex-col gap-10 justify-center items-stretch mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] xl:h-[500px] mb-12'>
+    <section className='h-auto flex flex-col gap-10 justify-center items-stretch mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] md:h-[500px] mb-12'>
         <h2 className={`${rubik.className} font-bold text-[32px] text-[#2b2e35] text-center`}>Reliable Services</h2>
-        <div className="flex flex-col lg:flex-row justify-between items-stretch gap-8 lg:gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 lg:gap-4">
             {data.map((item)=>{
               return (
-                <article className="flex flex-col justify-between items-center gap-3 xl:gap-6 xl:h-[325px] max-w-[400px]" key={item.id}>
+                <article className="flex flex-col justify-between items-center gap-3 xl:gap-6 md:h-[330px] xl:h-[325px] max-w-[400px]" key={item.id}>
                   <Image src={item.img} height="auto" width="auto" alt={item.title} />
-                  <div className="flex flex-col justify-between h-[100px]">
+                  <div className="flex flex-col justify-between h-auto">
                     <h4 className="text-xl text-[#2b2e35] font-semibold">{item.title}</h4>
                     <p className="text-base text-[#5b5b5b]">{item.description}</p>
                   </div>
