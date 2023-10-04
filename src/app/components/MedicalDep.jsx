@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import medicine from "@public/medicine_pic.svg"
+import Link from "next/link";
 
 const MedicalDep = () => {
     const Deptos = ["SURGERY", "MICROBIOLOGY", "PATHOLOGY"];
@@ -23,7 +24,7 @@ const MedicalDep = () => {
                         )
                     })}
                 </div>
-                <button className='transition-colors bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] border hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>CHECKOUT ALL DEPARTMENTS</button>
+                <Link href="/services" className='transition-colors flex justify-center items-center bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] border hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>CHECKOUT ALL DEPARTMENTS</Link>
             </div>
             <div className="w-full mb-12 lg:w-1/2">
                 <Image src={medicine} height="auto" width="auto" alt="doctors working" />

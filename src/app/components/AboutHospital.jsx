@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from "next/link"
 import DoctorImg from "../../../public/doctorsWorking.svg"
 import { rubik } from '../font';
 
@@ -18,7 +19,7 @@ const AboutHospital = () => {
                     <h5>Choose Service</h5>
                     <h5>Send Messege</h5>
                 </div>
-                <button className='transition-colors bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>Know More</button>
+                <Link href="/about" className='transition-colors flex justify-center items-center bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>Know More</Link>
             </div>
         </div>
     </section>
