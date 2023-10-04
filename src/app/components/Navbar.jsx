@@ -41,11 +41,11 @@ const Navbar = ({openMenu, handleMenu}) => {
             <nav className="flex justify-between items-center gap-16">
                 {navList.map((item)=> {
                     return (
-                        <Link key={item.name} href={item.to} className="text-[#5b5b5b] font-medium hover:text-[#2b2e35] hover:font-bold">{item.name}</Link>
+                        <Link key={item.name} href={item.to} onClick={handleMenu} className="text-[#5b5b5b] font-medium hover:text-[#2b2e35] hover:font-bold">{item.name}</Link>
                     )
                 })}
             </nav>
-            <button className="bg-[#EEEFFF] text-[#032FF2] p-3 border border-transparent rounded-[10px] hover:border-[#032FF2] hover:border ">Get Appointment</button>
+            <Link href="/appointment" onClick={handleMenu} className="bg-[#EEEFFF] text-[#032FF2] p-3 border border-transparent rounded-[10px] hover:border-[#032FF2] hover:border ">Get Appointment</Link>
         </header>
     </>    
   )

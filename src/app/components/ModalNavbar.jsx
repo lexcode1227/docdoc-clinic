@@ -29,12 +29,12 @@ const ModalNavbar = ({handleMenu}) => {
     },
 ]
   return (
-    <section className='h-[95vh] z-10 flex flex-col gap-40 justify-between mx-5 py-12'>
+    <section className='h-[95vh] z-10 flex flex-col gap-40 justify-between mx-5 py-12 md:w-3/4'>
       <div className="flex justify-between">
         <Image src={Logo} height={30} width={125} alt="company logo"/>
         <button onClick={handleMenu}><FaTimes className="h-[30px] w-[30px]" /></button>
       </div>
-      <div className="h-1/3 flex flex-col gap-8 ">
+      <div className="h-1/3 flex flex-col items-center gap-8 ">
         <nav className="flex flex-col items-center gap-3">
           {navList.map((item)=> {
             return (
@@ -42,7 +42,7 @@ const ModalNavbar = ({handleMenu}) => {
             )
           })}
         </nav>
-        <button className="bg-[#EEEFFF] text-[#032FF2] p-3 border border-transparent rounded-[10px] hover:border-[#032FF2] hover:border ">Get Appointment</button> 
+        <Link href="/appointment" className="w-[250px] text-center bg-[#EEEFFF] text-[#032FF2] p-3 border border-transparent rounded-[10px] hover:border-[#032FF2] hover:border ">Get Appointment</Link> 
       </div>
       <div className="flex justify-around px-12">
           <Link href={"#"}><RiInstagramFill fill="#032ff2" className="h-[25px] w-[25px]" /> </Link>
