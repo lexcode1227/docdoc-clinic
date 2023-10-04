@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import Bar from './components/Banner';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import MainSection from './components/MainSection';
 import ContactBanner from './components/ContactBanner';
 import Services from './components/Services';
