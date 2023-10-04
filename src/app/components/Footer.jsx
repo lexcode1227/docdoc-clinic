@@ -7,6 +7,28 @@ import { FaTiktok } from "react-icons/fa";
 import { RiInstagramFill, RiWhatsappFill,RiLinkedinFill  } from "react-icons/ri";
 
 const Footer = () => {
+    const navList = [
+        {
+            name: "Home",
+            to: "/",
+        },
+        {
+            name: "About us",
+            to: "/about",
+        },
+        {
+            name: "Services",
+            to: "/services",
+        },
+        {
+            name: "Blog",
+            to: "/blog",
+        },
+        {
+            name: "Shop",
+            to: "/shop",
+        },
+    ]
   return (
     <footer className='h-auto lg:h-[350px] bg-[#EEEFFF] pt-10'>
         <div className='flex flex-col justify-between items-center md:items-start  gap-8 mx-5 mb-11 md:flex-wrap md:flex-row lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px]'>
@@ -22,13 +44,13 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col gap-8 justify-between w-full md:w-auto'>
                     <h4 className={`${rubik.className} font-bold text-[#2b2e35] text-xl`} >Useful Pages</h4>
-                    <ul className='flex md:flex-col justify-between gap-3 text-[#5b5b5b]'>
-                        <Link href="#" >Home</Link>
-                        <Link href="#" >About</Link>
-                        <Link href="#" >Services</Link>
-                        <Link href="#" >Blog</Link>
-                        <Link href="#" >Shop</Link>
-                    </ul>
+                    <nav className='flex md:flex-col justify-between gap-3 text-[#5b5b5b]'>
+                        {navList.map((item)=> {
+                            return (
+                                <Link key={item.name} href={item.to} className="transition-all hover:text-[#2b2e35] hover:font-bold">{item.name}</Link>
+                            )
+                        })}
+                    </nav>
                 </div>
                 <div className='w-full gap-8 md:w-[215px] xl:w-[276px] flex flex-col justify-between'>
                     <h4 className={`${rubik.className} font-bold text-[#2b2e35] text-xl`} >Contacts</h4>

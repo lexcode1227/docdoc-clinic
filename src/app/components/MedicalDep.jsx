@@ -19,11 +19,11 @@ const MedicalDep = () => {
                 <div className="flex justify-start lg:justify-between flex-wrap lg:flex-nowrap gap-4 lg:gap-3 w-full xl:w-[570px]">
                     {Deptos.map((item)=>{
                         return (
-                            <h4 key={item} className="bg-white w-auto xl:w-[170px] text-center text-[#5B5B5B] text-base rounded-[9px] py-2 lg:py-4 px-4 lg:px-6">{item}</h4>
+                            <h4 key={item} className="transition-all bg-white w-auto xl:w-[170px] text-center text-[#5B5B5B] text-base rounded-[9px] py-2 lg:py-4 px-4 lg:px-6 hover:border hover:border-[#5b5b5b]">{item}</h4>
                         )
                     })}
                 </div>
-                <button className='bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px]'>CHECKOUT ALL DEPARTMENTS</button>
+                <button className='transition-colors bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] border hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>CHECKOUT ALL DEPARTMENTS</button>
             </div>
             <div className="w-full mb-12 lg:w-1/2">
                 <Image src={medicine} height="auto" width="auto" alt="doctors working" />

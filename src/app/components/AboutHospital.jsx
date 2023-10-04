@@ -18,7 +18,7 @@ const AboutHospital = () => {
                     <h5>Choose Service</h5>
                     <h5>Send Messege</h5>
                 </div>
-                <button className='bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px]'>Know More</button>
+                <button className='transition-colors bg-[#032FF2] text-white text-base w-[270px] h-[60px] rounded-[10px] hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>Know More</button>
             </div>
         </div>
     </section>
