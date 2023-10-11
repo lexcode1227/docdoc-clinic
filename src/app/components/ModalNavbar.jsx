@@ -29,7 +29,7 @@ const ModalNavbar = ({handleMenu, closeMenuMobile}) => {
     },
 ]
   return (
-    <section className='h-[90vh] z-10 flex flex-col gap-40 justify-evenly mx-5 pb-12 md:w-3/4'>
+    <section className='h-[93vh] z-10 flex flex-col gap-40 justify-evenly mx-5 py-12 md:w-3/4'>
       <div className="flex justify-between">
         <Link href="/"><Image src={Logo} height={30} width={125} alt="company logo"/></Link>
         <button onClick={handleMenu}><FaTimes className="h-[30px] w-[30px]" /></button>

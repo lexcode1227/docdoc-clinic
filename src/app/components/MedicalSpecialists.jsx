@@ -25,7 +25,7 @@ const MedicalSpecialists = () => {
     ]
   return (
     <section className="flex flex-col gap-10 justify-center items-stretch mx-5 my-16 h-auto lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] lg:h-[600px]">
-        <h2 className={`${rubik.className} text-center text-[32px] text-[#2b2e35]`} >Medical Specialists</h2>
+        <h2 className={`${rubik.className} font-bold text-center text-[32px] text-[#2b2e35]`} >Medical Specialists</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-6">
             {medicalStaff.map((item)=>{
                 return (

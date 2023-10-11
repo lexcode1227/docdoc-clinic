@@ -26,7 +26,7 @@ const Services = () => {
         },
     ]
   return (
-    <section className="flex flex-col md:flex-row justify-between gap-6 mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] my-14 ">
+    <section className="flex flex-col md:flex-row justify-between gap-6 mx-5 lg:mx-[50px] xl:mx-[100px] 2xl:mx-[200px] mt-14 mb-20 ">
         {data.map((item)=> {
             const firsttitle = item.title.split(" ")[0]
             const sectitle = item.title.split(" ")[1]

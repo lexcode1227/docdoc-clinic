@@ -6,8 +6,8 @@ import { rubik } from '../font';
 const MainSection = () => {
   return (
     <section className='h-full flex flex-col md:flex-row'>
-      <div className='w-full md:w-1/2 xl:w-2/5 flex flex-col items-start justify-center gap-5 pl-5 lg:pl-[50px] xl:pl-[100px] 2xl:pl-[200px] '>
-        <h1 className={`${rubik.className} text-[70px] leading-[85px]`} >Get Better <br /> Care For<span className='text-[#032ff2]'>-</span> <br /> Your Health<span className='text-[#032ff2]'>.</span></h1>
+      <div className='w-full md:w-1/2 xl:w-2/5 flex flex-col items-start justify-center gap-5 pl-5 lg:pl-[50px] xl:pl-[100px] 2xl:pl-[200px] text-[#2b2e35]'>
+        <h1 className={`${rubik.className} text-[70px] leading-[85px] `} >Get Better <br /> Care For<span className='text-[#032ff2]'>-</span> <br /> Your Health<span className='text-[#032ff2]'>.</span></h1>
         <h4 className='text-[20px]'>Quisque leo augue, lobortis ac tellus nec, posuere ultricies nulla. Praesent massa odio. </h4>
         <button className='transition-colors bg-[#032FF2] py-4 px-8 text-white rounded-[9px] hover:bg-transparent hover:text-[#032ff2] hover:border hover:border-[#032FF2]'>Learn More</button>
       </div>
