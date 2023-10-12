@@ -31,14 +31,14 @@ const AccordionItem = ({ title, position, date, image }) => {
           </svg>
         </div>
         <div className="w-full">
-          <h4 className="text-lg font-semibold text-black">{title}</h4>
+          <h4 className="text-lg font-semibold text-[#2b2e35]">{title}</h4>
         </div>
       </button>
 
       <div className={`pl-[62px] duration-200 ease-in-out ${active ? 'block' : 'hidden'}`}>
         <Image src={image} width={250} height={300} alt={`${title} picture`} />
-        <p className="py-3 text-base leading-relaxed text-body-color">{position}</p>
-        <p className="py-3 text-base leading-relaxed text-body-color">{date}</p>
+        <h3 className="py-3 text-base font-bold leading-relaxed text-[#2b2e35]">{position}</h3>
+        <h3 className="py-3 text-base font-bold leading-relaxed text-[#5b5b5b]">{date}</h3>
       </div>
     </div>
   );

@@ -61,12 +61,12 @@ const Footer = () => {
                         <p className='text-base text-[#5b5b5b]'>sales@example.com</p>
                     </div>
                 </div>
-                <div className='w-full md:w-[245px] xl:w-[285px] flex flex-col gap-5'>
+                <div className='w-full md:w-[245px] xl:w-[300px] 2xl:w-[375px] flex flex-col gap-5'>
                     <h4 className={`${rubik.className} font-bold text-[#2b2e35] text-xl`} >Contacts</h4>
                     <p className='text-base text-[#5b5b5b]'>Join our newsletter and receive 10% off your first puchase</p>
-                    <form action="" className='flex w-[300px] md:w-full'>
+                    <form action="" className='flex w-[370px] md:w-full'>
                         <input type="email" name="" id="" placeholder='Enter Your Mail' className='rounded-xl bg-[#032FF2] w-4/5 p-4 text-white' />
-                        <button type="submit" className='bg-white w-[90px] relative right-6 p-6 rounded-xl'>OK</button>
+                        <button type="submit" className='bg-white w-[90px] relative right-5 p-6 rounded-xl'>OK</button>
                     </form>
                 </div>
             </div>

@@ -30,8 +30,8 @@ const Accordion = () => {
     const datacol2 = [
         {
           id: 4,
-          title: "Dr.Alexandra Smith | President",
-          position: "Pediatric Clinic",
+          title: "Dr.Alexandra Smith | MD",
+          position: "Pediatric Doc",
           date: "Director since 2013",
           image: doc1,
       },
