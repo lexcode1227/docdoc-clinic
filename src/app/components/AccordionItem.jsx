@@ -10,7 +10,7 @@ const AccordionItem = ({ title, position, date, image }) => {
   };
 
   return (
-    <div className={`${active ? 'h-auto' : 'h-[94px]'}  w-full lg:w-[440px] xl:w-[500px] 2xl:w-[700px] rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8`}>
+    <div className={`${active ? 'h-auto' : 'h-[94px]'}  w-full lg:w-[440px] xl:w-[500px] 2xl:w-[650px] rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8`}>
       <button
         className={`faq-btn flex items-center w-full text-left`}
         onClick={handleToggle}
