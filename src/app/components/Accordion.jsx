@@ -52,16 +52,16 @@ const Accordion = () => {
   ]
     return (
       <section className="h-auto relative z-20 overflow-hidden bg-white">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row items-start lg:justify-between xl:justify-evenly flex-wrap w-full gap-5">
-            <div className="flex flex-col flex-wrap justify-evenly items-center gap-5 w-full lg:w-[48%]">
+        <div className="mx-auto">
+          <div className="flex flex-col lg:flex-row items-start lg:justify-between 2xl:justify-evenly flex-wrap w-full gap-5">
+            <div className="flex flex-col flex-wrap justify-evenly items-center xl:items-start gap-5 w-full lg:w-[48%]">
                 {datacol1.map((item)=>{
                     return (
                         <AccordionItem key={item.id} title={item.title} position={item.position} date={item.date} image={item.image} />
                     )
                 })}
             </div>
-            <div className="flex flex-col flex-wrap justify-evenly items-center gap-5 w-full lg:w-[48%]">
+            <div className="flex flex-col flex-wrap justify-evenly items-center xl:items-end gap-5 w-full lg:w-[48%]">
                 {datacol2.map((item)=>{
                     return (
                         <AccordionItem key={item.id} title={item.title} position={item.position} date={item.date} image={item.image} />
